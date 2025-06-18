@@ -1,0 +1,57 @@
+#УСТАНОВКА ЗАВИСИМОСТЕЙ
+
+!pip install -q openai gradio tiktoken langchain langchain-openai langchain-community chromadb
+
+# ИМПОРТЫ
+
+import os
+import shutil
+import ast
+import json
+import logging
+import pandas as pd
+import gradio as gr
+import tiktoken
+from typing import List, Dict, Any, Optional, Tuple
+from datetime import datetime
+from io import StringIO
+
+#Google Colab
+from google.colab import auth, drive, files
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+
+#LangChain
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.chains import RetrievalQA
+from langchain.schema import Document
+
+#######################
+# ИМПОРТЫ
+#######################
+
+import os
+import shutil
+import ast
+import json
+import logging
+import pandas as pd
+import gradio as gr
+import tiktoken
+from typing import List, Dict, Any, Optional, Tuple
+from datetime import datetime
+from io import StringIO
+
+#Google Colab
+from google.colab import auth, drive, files
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+
+#LangChain
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.chains import RetrievalQA
+from langchain.schema import Document
