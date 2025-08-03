@@ -1,9 +1,7 @@
-- to use assistant you need actual api key for LLM model, such as OpenAI
-- Copy code from colab_assistant_main_page to Colab page
+- to use assistant you need actual HuggingFace api key for downloading LLM model DeepSeek
+- Copy code start from "Сборка ассистента" to "Проверка без интерфейса"
 - run installations first
 - run main code
-- enter api and endpoint (if tunneling) to LLM on 'Настройки' page (Settings)
-- get notebooks on 'Обработка данных' page (Process data)
-- after that create database on same page
+- create new assistant as NotebookAssistant class with hf_token as parameter
+- after finishing download model assistant can process notebooks from your account
 - if you need, you can save and/or load DF or Database (recommend to save locally, save to dirve yet not implemented)
-- page 'Поиск' is for query to LLM for search information in database. Query in free natural form.
